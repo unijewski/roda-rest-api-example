@@ -1,4 +1,5 @@
 class App < Roda
+  plugin :json
   plugin :multi_route
 
   Dir['./routes/**/*.rb'].each { |f| require f }
