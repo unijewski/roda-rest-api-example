@@ -1,4 +1,6 @@
 class App < Roda
+  plugin :all_verbs
+  plugin :indifferent_params
   plugin :json
   plugin :multi_route
 
