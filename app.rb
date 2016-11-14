@@ -1,6 +1,8 @@
 class App < Roda
   plugin :multi_route
 
+  Dir['./routes/**/*.rb'].each { |f| require f }
+
   route do |r|
     r.multi_route
 
