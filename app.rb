@@ -1,3 +1,5 @@
+require 'pry'
+
 class App < Roda
   plugin :all_verbs
   plugin :indifferent_params
